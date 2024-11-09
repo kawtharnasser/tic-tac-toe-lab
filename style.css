@@ -3,18 +3,37 @@ body {
   /* Use a system font, if none are available use an available sans-sarif */
   font-family: system-ui, sans-serif;
   margin: 0;
+  text-align: center;
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
   width: 325px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .sqr {
+  background-color: rgb(225, 225, 225);
   width: 30%;
   aspect-ratio: 1/1;
   border: 3px solid black;
   font-size: 64px;
   text-align: center;
+}
+.sqr:hover {
+  background-color: rgb(182, 182, 182);
+}
+#reset-btn {
+  margin: 30px 0 0 0;
+  padding: 10px 130px;
+}
+
+#message {
+  color: rgb(10, 65, 119);
+}
+
+h1 {
+  color: rgb(176, 0, 0);
 }
